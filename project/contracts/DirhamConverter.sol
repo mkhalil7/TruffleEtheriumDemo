@@ -10,19 +10,19 @@ contract DirhamConverter {
 
 
 
-	function covnvertToEuro(uint amount) public view  returns(uint convertedAmount) {
+	function convertToEuro(uint amount) public view  returns(uint convertedAmount) {
 		convertedAmount =  amount * euroConversionRate /100 ;
 		return convertedAmount;
 	}
 
 
 
-	function covnvertToDollar(uint amount) public view  returns(uint convertedAmount) {
+	function convertToDollar(uint amount) public view  returns(uint convertedAmount) {
 		convertedAmount =  amount * dollarConversionRate / 100 ;
 		return convertedAmount;
 	}
 
-    function covnvertToPound(uint amount) public view  returns(uint convertedAmount) {
+    function convertToPound(uint amount) public view  returns(uint convertedAmount) {
 		convertedAmount =  amount * poundConversionRate /100;
 		return convertedAmount;
 	}
